@@ -127,4 +127,4 @@ public sealed class DecelerateSystem : IExecuteSystem {
 
 This is all interesting, but I still did not explain my main point. My __main point__ is that systems don't communicate to each other directly. In object oriented programming, functional programming and even procedural programming - objects, functions, or procedures _talk_ to each other directly and syncronously. In ECS systems only query state and change state. They are decoupled from each other. Or atleast they are unaware of each others existence. You might argue that things are coupled through component types, but component types are data driven. We define them in order to reflect the _"world"_ we want to simulate, so __data__ becomes our [API](https://en.wikipedia.org/wiki/Application_programming_interface).
 
-It is a very unique approach in handling things resulting from what I call the first rule of ECS - __Separate state from behaviour__. This is whjy I think it is worthy of being _Hello World_.
+It is a very unique approach in handling things resulting from what I call the first rule of ECS - __Separate state from behaviour__. This is why I think it is worthy of being _Hello World_.
